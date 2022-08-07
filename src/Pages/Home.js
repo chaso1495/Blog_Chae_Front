@@ -4,24 +4,24 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <RightBase>
+    <HomeBase>
       <GreetContainer>
         <Greeting />
       </GreetContainer>
       <MenuContainer>
         <Menus />
       </MenuContainer>
-    </RightBase>
+    </HomeBase>
   );
 };
 
-const RightBase = styled.div`
-  width: 1000px;
+const HomeBase = styled.div`
+  width: 100%;
+  height: 100%;
 
   display: flex;
   flex-wrap: wrap;
   flex-direction: Column;
-  justify-content: space-between;
 `; // 오른쪽 기초 레이아웃 잡아주기
 // flex-wrap: 자식 컴포넌트가 기본 축을 따라다가
 // 컴포넌트의 크기를 초과한 경우 대처법을 설정해줌.
@@ -55,7 +55,7 @@ const Greeting = () => {
   return (
     <>
       <p>안녕하세요</p>
-      <p Style="color: #164eab; font-weight:bold;">대학생 1인 개발자</p>
+      <p Style="color: #108fb8; font-weight:bold;">대학생 1인 개발자</p>
       <p>채승운입니다</p>
     </>
   );
@@ -83,10 +83,10 @@ const StyledLink = styled(Link)`
 const Menus = () => {
   return (
     <>
-      <StyledLink to="/Blog">Blog</StyledLink>
-      <StyledLink to="/Project">Project</StyledLink>
-      <StyledLink to="/ProblemSolving">ProblemSolving</StyledLink>
-      <StyledLink to="/About">About</StyledLink>
+      <StyledLink to="/blog">Blog</StyledLink>
+      <StyledLink to="/project">Project</StyledLink>
+      <StyledLink to="/problemsolving">ProblemSolving</StyledLink>
+      <StyledLink to="/about">About</StyledLink>
     </>
   );
 };

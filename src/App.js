@@ -4,18 +4,21 @@ import Main from "./Main";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
+import Project from "./Pages/Project";
+import ProblemSolving from "./Pages/ProblemSolving";
+import Home from "./Pages/Home";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/Blog" element={<Blog />} />
-        {/* <Route path="/Project" element={<Project />} />
-        <Route path="/Problemsolving" element={<ProblemSolving />} /> */}
-        <Route path="/About" element={<About />} />
-        <Route path="/" element={<Main />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route element={<Main />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/project" element={<Blog />} />
+        <Route path="/problemsolving" element={<ProblemSolving />} />
+        <Route path="/about" element={<About />} />
+      </Route>
+    </Routes>
   );
 };
 

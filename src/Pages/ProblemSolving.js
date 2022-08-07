@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-const Project = () => {
+const ProblemSolving = () => {
   return (
     <div>
       <p> PostView 페이지 입니다. </p>
@@ -9,4 +9,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProblemSolving;

@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Leftcomp from "./Leftcomp";
 import Home from "./Pages/Home";
+import { Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
     <Base>
       <Header />
       <RightBase>
-        <Home />
+        <Outlet />
       </RightBase>
     </Base>
   );
@@ -41,19 +42,19 @@ const LeftBase = styled.div`
   left: 0;
   position: fixed;
 
-  background-color: #164eab;
+  background-color: #2cbfe1;
 `;
 // position 태그는 태그를 어떻게 위치시킬지 정의한다.
 // fixed는 스크롤과 상관없이 문서 최 좌측상단 기준으로 좌표를 고정
 
 const RightBase = styled.div`
   height: 100%;
-  width: 100%;
+  width: 1000px;
 
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  margin-left: 300px;
+  margin-left: 400px;
 `;
 // justify~ 기준 축의 수평 방향으로 정렬
 

@@ -25,7 +25,7 @@ const Leftcomp = () => {
 const LeftStyle = styled.div`
   width: 100%;
 
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   bottom: 0;
   position: absolute;
 `;
@@ -41,7 +41,7 @@ const LeftTitle = styled.div`
     margin: 0px;
 
     color: white;
-    font-size: 50px;
+    font-size: 70px;
   }
 `;
 // margin 0px는 각각의 p의 상/하/좌/우에 공간이 들어감
@@ -50,23 +50,24 @@ const LeftTitle = styled.div`
 const Titlecontents = () => {
   return (
     <>
-      <p>채승운의</p>
-      <p>IT블로그</p>
+      <p>Chae's</p>
+      <p>Ground</p>
     </>
   );
 };
 // 블로그 이름
 
 const Lefthr = styled.hr`
-  width: 280px;
+  width: 270px;
   height: 0.1px;
+  margin-left: 40px;
 `;
 // 수평선 삽입인데 길이와 얇기 조절 스타일링
 
 const SnsIconsStyle = styled.div`
   width: 300px;
 
-  margin-left: 15px;
+  margin-left: 25px;
   margin-top: 20px;
 
   display: flex;
@@ -80,7 +81,7 @@ const SnsIcons = () => {
     <>
       <FontAwesomeIcon icon={faFacebook} color="white" />
       <FontAwesomeIcon icon={faGithub} color="white" />
-      <FontAwesomeIcon icon={faGooglePlay} color="white" />
+      {/* <FontAwesomeIcon icon={faGooglePlay} color="white" /> */}
       <FontAwesomeIcon icon={faInstagram} color="white" />
     </>
   );

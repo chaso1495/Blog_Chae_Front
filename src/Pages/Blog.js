@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Base from "../Main";
 import Header from "../Main";
 const Title = "Synology Docker 컨테이너 복원 시 오류 해결방법";
 const Date = "June 24, 2022";
@@ -8,14 +7,11 @@ const Tag = "#Docker";
 
 const Blog = () => {
   return (
-    <Base>
-      {/* <Header /> */}
-      {/* <RightBase>
-        <TopPostContainer></TopPostContainer>
-        <RightDivideLine />
-        <BottomPostContainer></BottomPostContainer>
-      </RightBase> */}
-    </Base>
+    <RightBase>
+      <TopPostContainer></TopPostContainer>
+      <RightDivideLine />
+      <BottomPostContainer></BottomPostContainer>
+    </RightBase>
   );
 };
 
@@ -134,7 +130,7 @@ const BottomPostTextContainer = styled.div`
 const PostTextTitle = styled.p`
   height: 40px;
 
-  color: blue;
+  color: #108fb8;
   font-size: 20px;
   font-weight: 500;
 `; // 제목 text의 위치, 색, 두께
