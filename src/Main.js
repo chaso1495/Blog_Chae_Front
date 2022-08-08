@@ -49,12 +49,12 @@ const LeftBase = styled.div`
 
 const RightBase = styled.div`
   height: 100%;
-  width: 1000px;
+  width: 1050px;
 
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  margin-left: 400px;
+  margin-top: 100px;
+  margin-left: 350px;
 `;
 // justify~ 기준 축의 수평 방향으로 정렬
 

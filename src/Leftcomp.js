@@ -79,10 +79,20 @@ const SnsIconsStyle = styled.div`
 const SnsIcons = () => {
   return (
     <>
-      <FontAwesomeIcon icon={faFacebook} color="white" />
-      <FontAwesomeIcon icon={faGithub} color="white" />
-      {/* <FontAwesomeIcon icon={faGooglePlay} color="white" /> */}
-      <FontAwesomeIcon icon={faInstagram} color="white" />
+      <a
+        href="https://www.facebook.com/profile.php?id=100004757890230"
+        target="_sub"
+      >
+        <FontAwesomeIcon icon={faFacebook} color="white" />
+      </a>
+
+      <a href="https://github.com/chaso1495" target="_sub">
+        <FontAwesomeIcon icon={faGithub} color="white" />
+      </a>
+
+      <a href="https://www.instagram.com/win__luck/" target="_sub">
+        <FontAwesomeIcon icon={faInstagram} color="white" />
+      </a>
     </>
   );
 };

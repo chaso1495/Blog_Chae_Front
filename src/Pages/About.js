@@ -54,6 +54,8 @@ const DivideLine = styled.hr`
   background-color: black;
   height: 0.1px;
   border: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 export default About;

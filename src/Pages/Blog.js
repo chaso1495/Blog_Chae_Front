@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../Main";
 const Title = "Synology Docker 컨테이너 복원 시 오류 해결방법";
 const Date = "June 24, 2022";
 const Tag = "#Docker";
@@ -16,15 +15,16 @@ const Blog = () => {
 };
 
 const RightDivideLine = styled.hr`
-  width: 1000px;
+  width: 1050px;
   border: 1;
+  margin-bottom: 15px;
   background-color: black;
   height: 1px;
 `; // 오른쪽 가운데 선
 // 다음시간에 border와 height의 차이(수평선) 메모해오기
 
 const RightBase = styled.div`
-  width: 1000px;
+  width: 1100px;
 
   display: flex;
   flex-direction: row;
@@ -39,7 +39,7 @@ const RightBase = styled.div`
 
 const TopPostContainer = () => {
   const Toparr = [];
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 6; i++) {
     Toparr.push(<TopPost></TopPost>);
   }
   return Toparr;
@@ -66,7 +66,7 @@ const TopPost = () => {
 
 const BottomPostContainer = () => {
   const BottomArr = [];
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 6; i++) {
     BottomArr.push(<BottomPost></BottomPost>);
   }
   return BottomArr;
@@ -160,8 +160,11 @@ const BottomImageContainer = styled.div`
 const TopPostObjectContainer = styled.div`
   height: 150px;
   width: 500px;
+  margin-right: 10px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: row;
+  box-shadow: 0 2px 4px 0 rgba(116, 116, 116, 0.25);
 `; // 위 게시물들이 들어갈 공간의 위치
 // 그리고 내부 컴포넌트들의 정렬 방식을 flew/row로
 // 처리하면서 사진 오른쪽에 text들이 서있도록 함.
@@ -171,6 +174,9 @@ const BottomPostObjectContainer = styled.div`
   width: 300px;
   display: flex;
   flex-direction: column;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px 0 rgba(116, 116, 116, 0.25);
 `; // 아래 게시물들이 들어갈 공간(Conatiner)의 위치를 지정
 
 // 공부해야할 보완사항
