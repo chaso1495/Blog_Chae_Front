@@ -26,8 +26,9 @@ const About = () => {
 };
 
 const AboutBase = styled.div`
-  width: 1000px;
-  height: 700px;
+  width: 100%;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

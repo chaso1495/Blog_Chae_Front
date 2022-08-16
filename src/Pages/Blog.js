@@ -24,12 +24,13 @@ const RightDivideLine = styled.hr`
 // 다음시간에 border와 height의 차이(수평선) 메모해오기
 
 const RightBase = styled.div`
-  width: 1100px;
+  width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `; // 오른쪽 기초 레이아웃 잡아주기
 // flex-wrap: 자식 컴포넌트가 기본 축을 따라다가
 // 컴포넌트의 크기를 초과한 경우 대처법을 설정해줌.
@@ -160,7 +161,6 @@ const BottomImageContainer = styled.div`
 const TopPostObjectContainer = styled.div`
   height: 150px;
   width: 500px;
-  margin-right: 10px;
   margin-bottom: 15px;
   display: flex;
   flex-direction: row;

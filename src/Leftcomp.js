@@ -39,10 +39,29 @@ const LeftTitle = styled.div`
   margin-bottom: 15px;
   p {
     margin: 0px;
-
     color: white;
     font-size: 70px;
+
+    animation-name: Title;
+    animation-duration: 2s;
+    animation-timing-fuction: ease-in-out;
+  
+    @keyframes Title {
+      0% {
+        font-size: 100px;
+        display: none;
+      }
+      50% {
+        font-size: 100px;
+        display: block;
+      }
+      100% {
+        font-size: 70px;
+        display: block;
+      }
   }
+
+
 `;
 // margin 0px는 각각의 p의 상/하/좌/우에 공간이 들어감
 // 블로그 이름이 나타날 공간에 대한 설정
@@ -58,9 +77,28 @@ const Titlecontents = () => {
 // 블로그 이름
 
 const Lefthr = styled.hr`
-  width: 270px;
+  width: 260px;
   height: 0.1px;
   margin-left: 40px;
+
+  animation-name: Line;
+  animation-duration: 2s;
+  animation-timing-fuction: ease-in-out;
+
+  @keyframes Line {
+    0% {
+      display: none;
+      opacity: 0;
+      // 애니메이션 적용 대상 컴포넌트의 투명도를 통제, 0은 투명, 1은 불투명
+    }
+    50% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+    }
 `;
 // 수평선 삽입인데 길이와 얇기 조절 스타일링
 
@@ -73,6 +111,24 @@ const SnsIconsStyle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  animation-name: Icon;
+  animation-duration: 2s;
+  animation-timing-fuction: ease-in-out;
+
+  @keyframes Icon {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+    }
 `;
 // SNS 아이콘이 담길 때 위치 및 정렬 방식 조정
 // space-around는 각각의 아이콘들이 "같은 간격"을 가지도록
